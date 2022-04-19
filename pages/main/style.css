@@ -299,13 +299,10 @@ h1 {
 .about__text {
     display: flex;
     flex-direction: column;
-    width: 430px;
     height: 380px;
-    margin-right: 84px;
 }
 
 .about__title {
-    width: 370px;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -324,7 +321,6 @@ h1 {
     font-size: 15px;
     line-height: 160%;
     color: var(--color-dark-xl);
-    width: 430px;
 }
 
 .our__friends {
@@ -739,13 +735,11 @@ h1 {
 	}
 
 	.about__text {
-		margin-left: 84px;
 		margin-bottom: 78px;
 	}
 
 	.about__img {
 		margin-bottom: 3px;
-        margin-left: 0px;
 	}
 
     .our__friends__title {
@@ -784,7 +778,6 @@ h1 {
 
     .help__helping__item {
         margin: 0;
-        width: 24%;
         margin-bottom: 54px;
     }
 
@@ -849,6 +842,7 @@ h1 {
 @media screen and (max-width: 767px) {
 	.wrapper {
 		min-width: 300px;
+        padding: 0 9px;
 	}
     
     .overlay { 
@@ -870,7 +864,7 @@ h1 {
 	.nav__header__burger {
 		display: block;
 		margin-top: 11px;
-		margin-right: 43px;
+		margin-right: 45px;
 		z-index: 15;
 	}
 			
@@ -924,21 +918,21 @@ h1 {
 	}
 				
 	.nav__burger__menu {
-		display: flex;
-		position: absolute;
-		top: 0px;
-		right: -320px;
-		transition: all 1s ease-in-out;
-		flex-direction: column;
-		width: 320px;
-		height: 823px;
-		background-color: var(--color-dark-3xl);
-		z-index: 12;
+        display: hidden;
 	}
 			
 	.nav__burger__menu.open {
-		z-index: 13;
-		right: 0px;
+        width: 320px;
+		height: 823px;
+        display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 0px;
+        right: 0px;
+        animation-duration: 1s;
+        animation-name: open;
+		background-color: var(--color-dark-3xl);
+		z-index: 12;
 	}
 			
 	.nav__burger__menu.container.open {
@@ -1032,7 +1026,7 @@ h1 {
 
 	.not__only__text {
 		align-items: center;
-		margin-top: 180px;
+		margin-top: 150px;
 		margin-right: 0px;
 		width: auto;
 		align-content: center;
@@ -1043,7 +1037,7 @@ h1 {
 		align-self: center;
 		font-size: 25px;
 		letter-spacing: 0.06em;
-		
+		width: 80%;
 	}
 
 	.not__only__img {
@@ -1066,11 +1060,8 @@ h1 {
 	}
 
 	.about__text {
-		margin-left: 0px;
 		margin-bottom: 32px;
-		width: auto;
 		text-align: center;
-		height: auto;
 	}
 
 	.about__title {
@@ -1081,13 +1072,11 @@ h1 {
 	.about__subtitle__one,
     .about__subtitle__second {
 		margin-left: 15px;
-		margin-right: 15px;
 		text-align: justify;
 	}
 
 	.about__img {
 		margin-bottom: 0px;
-		
 	}
 
 	.about__img img {
@@ -1109,7 +1098,7 @@ h1 {
 	}
 	.arrow__prew {
 		margin-right: 12px;
-		order:2;
+		order: 2;
 		width: 52px;
 		margin-right: -16px;
 		margin-top: 19px;
@@ -1119,7 +1108,7 @@ h1 {
 		margin-left: 14px;
 		order: 3;
 		width: 52px;
-		margin-left: -18px;
+		margin-left: -18px; 
 		margin-top: 19px;
 	}
 
@@ -1159,7 +1148,6 @@ h1 {
     }
 
     .help__helping__item {
-        width: 45%;
         margin-bottom: 3rem
     }
 
@@ -1286,4 +1274,14 @@ h1 {
 	.footer__content__second {
 		margin-top: -15px;
 	}
+
+    @keyframes open {
+        from {
+            right: -320px;
+        }
+        
+        to {
+            right: 0px;
+        }
+    }
 }

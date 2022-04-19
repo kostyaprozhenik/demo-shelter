@@ -657,10 +657,10 @@ a {
 		margin-bottom: 42px;
 	}
 
-	.nav__burger__menu__link-1, 
-	.nav__burger__menu__link-2, 
-	.nav__burger__menu__link-3, 
-	.nav__burger__menu__link-4 {
+	.nav__burger__menu__link__first, 
+	.nav__burger__menu__link__second, 
+	.nav__burger__menu__link__third, 
+	.nav__burger__menu__link__fourth {
 		font-family: 'Arial';
 		font-style: normal;
 		font-weight: 400;
@@ -670,15 +670,25 @@ a {
 		text-decoration: none;
 	}
 
-	.nav__burger__menu__link-2 {
+	.nav__burger__menu__link__second {
 		border-bottom: var(--color-primary) solid 3px;
 	}
 	
-	.nav__burger__menu__link-1.open:hover, .nav__burger__menu__link-1.open:focus, .nav__burger__menu__link-1.open:active,
-	.nav__burger__menu__link-2.open:hover, .nav__burger__menu__link-2.open:focus, .nav__burger__menu__link-2.open:active,
-	.nav__burger__menu__link-3.open:hover, .nav__burger__menu__link-3.open:focus, .nav__burger__menu__link-3.open:active,
-	.nav__burger__menu__link-4.open:hover, .nav__burger__menu__link-4.open:focus, .nav__burger__menu__link-4.open:active,
-	.nav__burger__menu__link-5.open:hover, .nav__burger__menu__link-5.open:focus, .nav__burger__menu__link-5.open:active {
+	.nav__burger__menu__link__first.open:hover,
+    .nav__burger__menu__link__first.open:focus,
+    .nav__burger__menu__link__first.open:active,
+	.nav__burger__menu__link__second.open:hover,
+    .nav__burger__menu__link__second.open:focus,
+    .nav__burger__menu__link__second.open:active,
+	.nav__burger__menu__link__third.open:hover,
+    .nav__burger__menu__link__third.open:focus,
+    .nav__burger__menu__link__third.open:active,
+	.nav__burger__menu__link__fourth.open:hover, 
+    .nav__burger__menu__link__fourth.open:focus,
+    .nav__burger__menu__link__fourth.open:active,
+	.nav__burger__menu__link__fifth.open:hover,
+    .nav__burger__menu__link__fifth.open:focus,
+    .nav__burger__menu__link__fifth.open:active {
 		color: var(--color-light-xl);
 		transition: 0.5s;
 	}
